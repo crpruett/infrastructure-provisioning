@@ -10,3 +10,11 @@ terraform {
     }
   }
 }
+
+provider "azurerm" {
+  features {}
+}
+
+provider "aws" {
+  features {}
+}
