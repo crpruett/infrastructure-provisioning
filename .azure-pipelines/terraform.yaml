@@ -1,6 +1,7 @@
 trigger:
   branches:
-    include: -main
+    include: 
+      - main
 
 pr:
   branches:
@@ -36,7 +37,7 @@ stages:
 
   - stage: Plan
     dependsOn: Validate
-    dispalyName: "Terraform Plan"
+    displayName: "Terraform Plan"
     jobs:
       - job: plan
         steps:
