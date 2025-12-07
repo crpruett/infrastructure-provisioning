@@ -32,7 +32,7 @@ resource "azurerm_virtual_network" "vnet" {
   name = "bicloud-vnet"
   address_space = ["10.1.0.0/16"]
   location = var.azure_location
-  resrouce_group_name = azurerm_resource_group.rg[0].name
+  resource_group_name = azurerm_resource_group.rg[0].name
 }
 
 resource "azurerm_subnet" "subnet" {
